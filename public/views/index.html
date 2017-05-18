@@ -4,11 +4,19 @@
     <meta charset="utf-8">
     <title>Yin Cello</title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/yinCello.js" charset="utf-8"></script>
     <link rel="stylesheet" href="vendors/bootstrap.css">
     <link rel="stylesheet" href="styles/style.css">
+    <base href="/">
   </head>
-  <body>
+  <body ng-app="myApp">
     <div class="jumbotron"><h1>Yin Cello</h1></div>
+    <nav class="navBar">
+      <a class ="links" href="/">Home</a>
+      <a class ="links" href="/events">Events</a>
+      <a class ="links" href="/contact">Contact</a>
+    </nav>
+    <ng-view></ng-view>
   </body>
 </html>
