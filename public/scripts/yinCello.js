@@ -1,1 +1,3 @@
-console.log('yinCello.js');
+var myApp = angular.module('myApp', ['ngRoute'], function() {
+  
+});
