@@ -10,6 +10,7 @@ var port = process.env.PORT || 2367;
 
 //uses
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 
 //base url hit
