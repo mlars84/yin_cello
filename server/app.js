@@ -15,10 +15,10 @@ app.use(express.static('public'));
 
 //base url hit
 app.get('/', function(req, res) {
-  res.sendFile(path.resolve('public/views/index.html'));
+    res.sendFile(path.resolve('public/views/index.html'));
 });
 
 //listening...
 app.listen(port, function() {
-  console.log('listening on ', port);
+    console.log('listening on ', port);
 });

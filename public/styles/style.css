@@ -1,14 +1,14 @@
 .jumbotron {
-  text-align: center;
-  color: lightblue;
+    text-align: center;
+    color: lightblue;
 }
 
 .navBar {
 }
 
 .links {
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 5px 5px 5px 5px;
-  font-size: 18px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
 }
