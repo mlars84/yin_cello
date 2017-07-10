@@ -1,14 +1,25 @@
 .jumbotron {
     text-align: center;
-    color: lightblue;
+    color: #cfc5bc;
+    background-image: url('https://w-dog.net/wallpapers/6/9/486879369404998/cello-music-background.jpg');
+    text-shadow: 2px 4px #705345;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a {
+  color: #cfc5bc;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .navBar {
+
 }
 
 .links {
-    border: 1px solid black;
-    border-radius: 10px;
     padding: 5px 5px 5px 5px;
     font-size: 18px;
+}
+
+body {
+  background-image: url('https://w-dog.net/wallpapers/6/9/486879369404998/cello-music-background.jpg');
 }
