@@ -11,11 +11,11 @@ var port = process.env.PORT || 2367;
 //uses
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('public'));
+app.use(express.static(path.resolve('public')));
 
 //base url hit
-app.get('/', function(req, res) {
-    res.sendFile(path.resolve('public/views/index.html'));
+app.use('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 
 //listening...

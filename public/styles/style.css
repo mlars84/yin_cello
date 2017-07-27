@@ -1,8 +1,8 @@
 .jumbotron {
     text-align: center;
     color: #cfc5bc;
-    background-image: url('https://w-dog.net/wallpapers/6/9/486879369404998/cello-music-background.jpg');
-    text-shadow: 2px 4px #705345;
+    /*background-image: url('https://w-dog.net/wallpapers/6/9/486879369404998/cello-music-background.jpg');*/
+    /*text-shadow: 2px 4px #705345;*/
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -17,9 +17,9 @@ a {
 
 .links {
     padding: 5px 5px 5px 5px;
-    font-size: 18px;
+    font-size: 2em;
 }
 
 body {
-  background-image: url('https://w-dog.net/wallpapers/6/9/486879369404998/cello-music-background.jpg');
+  /*background-image: url('https://w-dog.net/wallpapers/6/9/486879369404998/cello-music-background.jpg');*/
 }
