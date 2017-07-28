@@ -8,11 +8,11 @@ const myApp = angular.module('myApp', ['ngRoute']);
       controller: 'LoginController as lc'
     })
     .when('/events', {
-      templateUrl: '/views/events.html',
+      templateUrl: '/views/pages/events.html',
       controller: "EventsController as ec"
     })
     .when('/contact', {
-      templateUrl: '/views/contact.html',
+      templateUrl: '/views/pages/contact.html',
       controller: "ContactController as cc"
     })
     .otherwise({
