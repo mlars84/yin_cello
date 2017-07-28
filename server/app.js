@@ -6,19 +6,19 @@ var bodyParser = require('body-parser');
 var db = require('./modules/db');
 var mongoose = require('mongoose');
 
-var port = process.env.PORT || 2367;
-
 //uses
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(path.resolve('public')));
+app.use(express.static(path.join(__dirname, './public')));
 
-//base url hit
-app.use('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'views/index.html'));
+// base url
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public/views/index.html'));
 });
 
-//listening...
-app.listen(port, function() {
-    console.log('listening on ', port);
+// App Set //
+app.set('port', (process.env.PORT || 5000));
+
+// Listen //
+app.listen(app.get("port"), function(){
 });
