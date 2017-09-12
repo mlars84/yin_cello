@@ -5,7 +5,7 @@ const myApp = angular.module('myApp', ['ngRoute']);
 
     $routeProvider
     .when('/', {
-      controller: 'LoginController as lc'
+      templateUrl: '/views/pages/home.html'
     })
     .when('/events', {
       templateUrl: '/views/pages/events.html',
